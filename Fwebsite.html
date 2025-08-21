@@ -26,13 +26,13 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Productos</a>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#m3">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#m2">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contactos</a>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#m1">Contactos</a>
           </li>  
         </ul>
       </div>
@@ -72,6 +72,39 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 bg-primary d-flex justify-content-center">Theempreror@empresa.sa fono:99 8888 8888</div>
+    </div>
+    </div>
+    <div class="modal" id="m1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Contactos</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="/action_page.php">
+                <div class="mb-3 mt-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="mensaje">Datos</label>
+                  <textarea class="form-control" id="mensaje" rows="6"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary">Enviar</button>
+              </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
     </div>
   </div>
 </body>
